@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("./font/Gilroy-Bold.woff2") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("./font/Gilroy-Medium.woff2") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("./font/Gilroy-Regular.woff2") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Semibold";
+  src: url("./font/Gilroy-Semibold.woff2") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  /* убирает атрибуты, например, подчеркивание у ссылок*/
+}
+
+body {
+  scroll-behavior: smooth;
+  /*создает плавность прокрутки страницы*/
+  background: #ffffff;
+  /*цвет фона по умолчанию*/
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  /* превращает картинку в блочный элемент. Аналог <div> */
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-start;
+  gap: 500px;
+  /*отфлексили по горизонтали и добавили пробелов*/
+  padding-top: 45px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+
+  /*0 - сверху и снизу, а справа-слево - высчитывает автоматически, и центрирует по центру по горизонтали*/
+}
+
+.menu_navigation {
+  width: 533px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation a {
+  font-family: Gilroy-SemiBold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+  font-size: 16px;
+  line-height: 22px;
+  /*стилизация ссылок а класса navigation */
+}
+
+.navigation a:nth-child(1) {
+  color: #f25822;
+}
+/* псевдоселектор, назназначаем новые свойства первому элементу */
+
+
+.main-content {
+  display: flex; /*выстроил по горизонтали два элемента: контент и картинку*/
+  gap: 41px;
+  /*отфлексили блок main*/
+  margin-top: 89px;
+  margin-bottom: 259px;
+}
+
+.main-content_btn-list {
+  display: flex; /*выстроил по горизонтали два элемента: контент и картинку*/
+  gap: 72px;
+  max-width: 374px;
+  margin-top: 37px;
+}
+
+.main-content_btn_Start {
+  color: #ffffff;
+  font-family: "Gilroy-Bold";
+  font-size: 15px;
+  line-height: 17.58px;
+  padding: 15px 36px 16px 35px;
+  border-radius: 50px;
+  background: #f25822;
+  border: none; /*отключает рамочку у кнопки*/
+  cursor: pointer; /*меняет курсор при наведении, т.е. понятно что это кнопка и она кликабельна*/
+}
+
+.main-content_btn_Watch {
+  color: #aaaaaa;
+  font-family: "Gilroy-Bold";
+  font-size: 15px;
+  line-height: 17.58px;
+  background: #ffffff;
+  border: none; /*отключает рамочку у кнопки*/
+  cursor: pointer; /*меняет курсор при наведении, т.е. понятно что это кнопка и она кликабельна*/
+}
+
+.main-content_wrapper p {
+  color: #888888;
+  font-family: "Gilroy-Medium";
+  font-size: 20px;
+  line-height: 23.44px;
+  max-width: 466px; /*задает длину блока*/
+  margin-top: 17px;
+}
+
+.main-content_wrapper h1 {
+  color: #000000;
+  font-family: "Gilroy-Bold";
+  font-size: 60px;
+  line-height: 70.31px;
+  max-width: 522px; /*задает длину блока*/
+}
+
+.logos {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
